@@ -1,9 +1,7 @@
 package com.Practise.MethodArgumentNaotValidError.Entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 
 @Entity
 @Table(name = "NewProfile")
@@ -23,9 +21,9 @@ public class User {
 
     @Column(name = "Age")
     @NotNull(message = "Age Cannot be Empty")
-    @Size(min = 18,message = "Not Allowed for age less than 18")
-    @Size(max = 45,message = "Age limit exceeded")
-    int age;
+    @Min(value = 18, message = "Not Allowed for age less than 18")
+    @Max(value = 45, message = "Age limit exceeded")
+    private int age;
 
     public User(int id, String name, String address, int age) {
         this.id = id;
