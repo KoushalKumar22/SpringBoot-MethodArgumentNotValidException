@@ -29,7 +29,7 @@ This project is a simple Spring Boot application for managing user profiles. It 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/KoushalKumar22/your-repo-name.git
    cd your-repo-name
 2. Build the project:
    ```sh
@@ -42,7 +42,7 @@ The application will start on http://localhost:8080.
 ### Endpoints
 
 1. Test Endpoint
-- URL: '/test'
+- URL: `/test`
 
 - Method: GET
 
@@ -51,7 +51,7 @@ The application will start on http://localhost:8080.
 - Response: "This Is A Test Run"
 
 2. Save DATA
-- URL: '/save'
+- URL: `/save`
 - Method: POST
 - Description: Save a new user data record to the database
 - Request Body: json in postman
@@ -63,7 +63,7 @@ The application will start on http://localhost:8080.
     }
 
 3. Get All Users
-- URL: /all
+- URL: `/all`
 - Method: GET
 - Description: Returns a list of all user profiles.
   
@@ -74,7 +74,7 @@ The application will start on http://localhost:8080.
 
 ### Exception Handling
 
-The application includes a global exception handler that captures 'MethodArgumentNotValidException' and returns a meaningful error response.
+The application includes a global exception handler that captures `MethodArgumentNotValid` and returns a meaningful error response.
 - example error response
   ```sh
    {
@@ -84,7 +84,18 @@ The application includes a global exception handler that captures 'MethodArgumen
   }
 ### Project Structure
 
-- User: Entity class representing a user profile.
-- UserRepository: Repository interface for CRUD operations on user profiles.
-- GlobalExceptionHandler: Global exception handler for validation errors.
-- UserController: REST controller for handling user-related requests.
+- `User`: Entity class representing a user profile.
+- `UserRepository`: Repository interface for CRUD operations on user profiles.
+- `GlobalExceptionHandler`: Global exception handler for validation errors.
+- `UserController`: REST controller for handling user-related requests.
+
+## Acknowledgements
+
+I would like to thank the following resources and individuals who made this project possible:
+
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
+- [Hibernate](http://hibernate.org/)
+- [Spring Validation](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#validation)
+- [JetBrains](https://www.jetbrains.com/idea/)
+- [Stack Overflow](https://stackoverflow.com/)
