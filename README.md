@@ -1,4 +1,4 @@
-# BreadcrumbsSpringBoot-MethodArgumentNotValidException
+# SpringBoot-MethodArgumentNotValidException
 
 This project is a simple Spring Boot application for managing user profiles. It includes basic CRUD operations with validation and global exception handling.
 
