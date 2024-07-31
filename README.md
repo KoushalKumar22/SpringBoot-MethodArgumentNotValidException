@@ -29,8 +29,8 @@ This project is a simple Spring Boot application for managing user profiles. It 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/KoushalKumar22/your-repo-name.git
-   cd your-repo-name
+   https://github.com/KoushalKumar22/SpringBoot-MethodArgumentNotValidException.git
+   cd SpringBoot-MethodArgumentNotValidException
 2. Build the project:
    ```sh
      mvn clean install
